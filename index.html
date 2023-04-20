@@ -1,353 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<div class="wrapper">
-				
-				 <section class="top-block">
-					<div class="top-block__container">
-						<div class="top-block__inner">
-							<div class="top-block__content">
-								<div class="top-block__title">Отримай якісне обстеження твого авто</div>
-								<div class="top-block__button button"><a href="#">Зв'язатись</a> </div>
-								<div class="top-block__schedule">
-									<div class="top-block__schedule-text text">Ми відкриті</div>
-									<div class="top-block__schedule-title ">З понеділка - П'ятницю з 8:00-18:00</div>
-								</div>
-							</div>
-							<div class="top-block__img">
-								<img src="@img/header-img.jpg" alt="">
-							</div>
-						</div>
-					</div>
-				</section>			
-				<section class="we">
-					<div class="we__container">
-						<div class="we-content">
-							<div class="we-content__title title-small">
-								Ми серйозно відносимся до обслуговування авто
-							</div>
-							<div class="we-content__inner"> 
-								<div class="we-content__item">
-									<div class="we-content__item-inner">
-										<div class="we-content__item-icon"> 
-											<img src="@img/we-1.svg" class="we-content__item-icon--svg"></img> 
-										</div>
-										<div class="we-content__item-title">Зручне обслуговування </div>
-										<div class="we-content__item-text text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero ut delectus vero? </div>
 
-									</div>
-								</div>
-								<div class="we-content__item">
-									<div class="we-content__item-inner">
-										<div class="we-content__item-icon"> 
-											<img src="@img/we-2.svg" class="we-content__item-icon--svg"></img> 
-										</div>
-										<div class="we-content__item-title">Професійні механіки</div>
-										<div class="we-content__item-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero ut delectus vero?</div>
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-									</div>
-								</div>
-								<div class="we-content__item">
-									<div class="we-content__item-inner">
-										<div class="we-content__item-icon">
-											 <img src="@img/we-3.svg" class="we-content__item-icon--svg"></img> 
-											</div>
-										<div class="we-content__item-title">Відповідна оплата</div>
-										<div class="we-content__item-text text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero ut delectus vero?</div>
-									</div>
-								</div>
-							</div>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<a class="header__logo" href="#">{AUTO IF} </a>
+				<div class="header__menu menu">
+					<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" data-goto=".header">Головна</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" data-goto=".offers" href="#">Послуги</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" data-goto=".about">Про нас </a>
+							</li>
 
-									</div>
-						<div class="we-form">
-							<div class="we-form__title title-small"> Отримайте запрошення на огляд</div>
-							<form class="we-form__inner">
-								<div class="we-form__inputs">
-									<input class="we-form__input" type="text" placeholder="Enter your name">
-									<input class="we-form__input" type="email" placeholder="Enter your email">
-									<input class="we-form__input" type="number" placeholder="Enter your number">
-									<input class="we-form__input" type="name" placeholder="Enter your location">
-								</div>
-								<div class="we-form__button">
-									<button class=" button">Отримати запрошення</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</section> 
-				 <section class="process">
-					<div class="process__container">
-						<div class="process-inner">
-							<div class="process-content">
-								<div class="process-content__inner">
-									<div class="process-content__title title-small">Як ми працюємо & процес якому слідуємо</div>
-									<div class="process-content__text">
-										<div class="process-content__text-item text-black">Through True Rich Attended does no end it his mother since</div>
-										<div class="process-content__text-item text-black">Attended does no end it his mother since real had half every</div>
-										<div class="process-content__text-item text-black">Since real had half every him case in packages enquire we up ecstatic</div> 
-									</div>
-								</div>
-							</div>
-							<div class="process-images">
-								<div class="process-images__box">
-									<div class="process-images__img">
-										<img src="@img/process-1.jpg" alt="">
-									</div>
-									<div class="process-images__img">
-										<img src="@img/process-2.jpg" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="diagnose">
-					<div class="diagnose__container">
-						<div class=" diagnose-inner ">
-							<div class="diagnose-images">
-								<div class="diagnose-images__box">
-									<div class="diagnose-images__img">
-										<img src="@img/diagnose-1.jpg" alt="">
-									</div>
-									<div class="diagnose-images__img">
-										<img src="@img/diagnose-2.jpg" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="diagnose-content">
-								<div class="diagnose-content__inner">
-									<div class="diagnose-content__title title-small">Як ми працюємо & процес якому слідуємо</div>
-									<p class="diagnose-content__text text ">
-										Ми пропонуємо повний спектр механічного ремонту передньої частини для всіх марок і моделей автомобілів, незалежно від причини. Сюди входить усе: від стійок, амортизаторів і наконечників рульових тяг до кульових шарнірів, пружин, все від стійок, амортизаторів і кінців рульових тяг до кульових шарнірів, пружин
-									</p>
-									<div class="diagnose-content__button">
-										<a href="" class="button">Забронювати</a>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				 <section class="reviews">
-					<div class="reviews__container">
-						<div class="reviews-inner">
-							<div class="reviews-title title-small">
-								<h3>Відгуки наших клієнтів</h3> 
-							</div>
-							<div class="reviews-slider swiper">
-								<div class="reviews-wrapper swiper-wrapper">
-									
-									<div class=" swiper-slide reviews-slide ">
-										<div class="reviews-slide__inner">
-											<div class="reviews-slide__person">
-												<div class="reviews-slide__person-img">
-													<img src="@img/person-1.jpg" alt="">
-												</div>
-												<div class="reviews-slide__person-box">
-													<div class="reviews-slide__person-name text-black">Зварун Богдан</div>
-													<div class="reviews-slide__person-city text">Тисмениця</div>
-												</div>
-											</div>
-											<p class="reviews-slide__text text-black">
-												Lorem ipsum dolor sit amet consectetur, adipisici harum impedit prusantium harum commodi qui
-										</div>
-									</div>
-									<div class=" swiper-slide reviews-slide ">
-										<div class="reviews-slide__inner">
-											<div class="reviews-slide__person">
-												<div class="reviews-slide__person-img">
-													<img src="@img/person-2.jpg" alt="">
-												</div>
-												<div class="reviews-slide__person-box">
-													<div class="reviews-slide__person-name text-black">Зварун Роман</div>
-													<div class="reviews-slide__person-city text">Івано - Франківськ</div>
-												</div>
-											</div>
-											<p class="reviews-slide__text text-black">
-												Lorem ipsum dolor sit amet couisquam ipsum dolorem omnis? Vero et quidem labore magni, voluptatum quibusdam accusantium totam?
-											</p>
-										</div>
-									</div>
-									<div class=" swiper-slide reviews-slide ">
-										<div class="reviews-slide__inner">
-											<div class="reviews-slide__person">
-												<div class="reviews-slide__person-img">
-													<img src="@img/person-1.jpg" alt="">
-												</div>
-												<div class="reviews-slide__person-box">
-													<div class="reviews-slide__person-name text-black">Зварун Богдан</div>
-													<div class="reviews-slide__person-city text">Тисмениця</div>
-												</div>
-											</div>
-											<p class="reviews-slide__text text-black">
-												Lorem ipsum dolor sit amet consectetur, adipisicinui quisquam ipsum dolorem omnis? Vero et quidem labore magni, voluptatum quibusdam accus
-											</p>
-										</div>
-									</div>
-									<div class=" swiper-slide reviews-slide ">
-										<div class="reviews-slide__inner">
-											<div class="reviews-slide__person">
-												<div class="reviews-slide__person-img">
-													<img src="@img/person-2.jpg" alt="">
-												</div>
-												<div class="reviews-slide__person-box">
-													<div class="reviews-slide__person-name text-black">Зварун Роман</div>
-													<div class="reviews-slide__person-city text">Івано - Франківськ</div>
-												</div>
-											</div>
-											<p class="reviews-slide__text text-black">
-												Lorem ipsum dolor sit amet consectetur, adipisicindem labore magni, voluptatum quibusdam accusantium totam?
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-buttons">
-									<button type="button" class="swiper-button-prev">
-										<div class="swiper-button__icon"></div>
-									</button>
-									<button type="button" class="swiper-button-next">
-										<div class="swiper-button__icon"></div>
-										
-									</button>
+							<li class="menu__item">
+								<a class="menu__link" data-goto=".footer" href="#">Контакти</a>
+							</li>
 
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
+						</ul>
+					</nav>
+					<div class="menu-number">
+						<div class="menu-number__inner">
+							<div class="menu-number__text text">Телефон асистента</div>
+							<div class="menu-number__phone">+380 50 24 29 680</div>
 						</div>
 					</div>
-				</section> 
-				  <section class="offers">
-					<div class="offers__container">
-						<div class="offers-inner">
-							<div class="offers-subtitle">Що ми пропонуєм </div>
-							<div class="offers-title title">Ми пропонуєм загальне обстеження авто & підтримку </div>
-							<div class="offers-items">
-								<div class="offers-item">
-									<div class="offers-item__inner">
-										<div class="offers-item__icon">
-											<img src="@img/offers-1.svg" alt="">
-										</div>
-										<div class="offers-item__text">Діагностика
-
-										</div>
-									</div>
-								</div>
-								<div class="offers-item">
-									<div class="offers-item__inner">
-										<div class="offers-item__icon">
-											<img src="@img/offers-2.svg" alt="">
-										</div>
-										<div class="offers-item__text">Ремонт двигуна</div>
-									</div>
-								</div>
-								<div class="offers-item">
-									<div class="offers-item__inner">
-										<div class="offers-item__icon">
-											<img src="@img/offers-3.svg" alt="">
-										</div>
-										<div class="offers-item__text">Ремонт колес</div>
-									</div>
-								</div>
-								<div class="offers-item">
-									<div class="offers-item__inner">
-										<div class="offers-item__icon">
-											<img src="@img/offers-4.svg" alt="">
-										</div>
-										<div class="offers-item__text">Масляний фільтер</div>
-									</div>
-								</div>
-								<div class="offers-item">
-									<div class="offers-item__inner">
-										<div class="offers-item__icon">
-											<img src="@img/offers-5.svg" alt="">
-										</div>
-										<div class="offers-item__text">Ручна робота</div>
-									</div>
-								</div>
-								<div class="offers-item">
-									<div class="offers-item__inner">
-										<div class="offers-item__icon">
-											<img src="@img/offers-6.svg" alt="">
-										</div>
-										<div class="offers-item__text">Батареї</div>
-									</div>
-								</div>
-								<div class="offers-item">
-									<div class="offers-item__inner">
-										<div class="offers-item__icon">
-											<img src="@img/offers-7.svg" alt="">
-										</div>
-										<div class="offers-item__text">Страхова заява</div>
-									</div>
-								</div>
-								<div class="offers-item">
-									<div class="offers-item__inner">
-										<div class="offers-item__icon">
-											<img src="@img/offers-8.svg" alt="">
-										</div>
-										<div class="offers-item__text">Кастомний сервіс</div>
-									</div>
-								</div>
-								 
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="contact">				
-						<div class="contact-inner">
-							<div class="contact-item contact-item--1">
-							</div>
-							<div class="contact-item contact-item__content contact-item--2">
-								<div class="contact-item__content-title title-small">Звяжіться з нами для сервісу</div>
-								<a href="" class="contact-item__content-button button">Звязатись</a>
-							</div>
-							<div class="contact-item contact-item--3">		
-							</div>
-						</div>
-				</section>
-				<section class="why">
-					<div class="why__container">
-						<div class="why-inner">
-							<div class="why-item">
-								<div class="why-item__number">
-									20+
-								</div>
-								<div class="why-item__text">Професіоналів</div>
-							</div>
-							<div class="why-item">
-								<div class="why-item__number">
-								10+
-								</div>
-								<div class="why-item__text">Років досвіду</div>
-							</div>
-							<div class="why-item">
-								<div class="why-item__number">
-									12К+
-								</div>
-								<div class="why-item__text">Виконаних обстежень</div>
-							</div>
-							<div class="why-item">
-								<div class="why-item__number">
-									100%
-								</div>
-								<div class="why-item__text">
-									Клієнтів задоволено
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</section> 
+				</div>
 			</div>
-			@@include('html/_footer.htm',{})
+		</header>
+		<div class="wrapper">
+
+			<section class="top-block">
+				<div class="top-block__container">
+					<div class="top-block__inner">
+						<div class="top-block__content">
+							<div class="top-block__title">Отримай якісне обстеження твого авто</div>
+							<div class="top-block__button button"><a href="#">Зв'язатись</a> </div>
+							<div class="top-block__schedule">
+								<div class="top-block__schedule-text text">Ми відкриті</div>
+								<div class="top-block__schedule-title ">З понеділка - П'ятницю з 8:00-18:00</div>
+							</div>
+						</div>
+						<div class="top-block__img">
+							<picture><source srcset="img/header-img.webp" type="image/webp"><img src="img/header-img.jpg" alt=""></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="we">
+				<div class="we__container">
+					<div class="we-content">
+						<div class="we-content__title title-small">
+							Ми серйозно відносимся до обслуговування авто
+						</div>
+						<div class="we-content__inner">
+							<div class="we-content__item">
+								<div class="we-content__item-inner">
+									<div class="we-content__item-icon">
+										<img src="img/we-1.svg" class="we-content__item-icon--svg" img>
+									</div>
+									<div class="we-content__item-title">Зручне обслуговування </div>
+									<div class="we-content__item-text text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero ut delectus vero? </div>
+
+								</div>
+							</div>
+							<div class="we-content__item">
+								<div class="we-content__item-inner">
+									<div class="we-content__item-icon">
+										<img src="img/we-2.svg" class="we-content__item-icon--svg" img>
+									</div>
+									<div class="we-content__item-title">Професійні механіки</div>
+									<div class="we-content__item-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero ut delectus vero?</div>
+
+								</div>
+							</div>
+							<div class="we-content__item">
+								<div class="we-content__item-inner">
+									<div class="we-content__item-icon">
+										<img src="img/we-3.svg" class="we-content__item-icon--svg" img>
+									</div>
+									<div class="we-content__item-title">Відповідна оплата</div>
+									<div class="we-content__item-text text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero ut delectus vero?</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="we-form">
+						<div class="we-form__title title-small"> Отримайте запрошення на огляд</div>
+						<form class="we-form__inner">
+							<div class="we-form__inputs">
+								<input class="we-form__input" type="text" placeholder="Enter your name">
+								<input class="we-form__input" type="email" placeholder="Enter your email">
+								<input class="we-form__input" type="number" placeholder="Enter your number">
+								<input class="we-form__input" type="name" placeholder="Enter your location">
+							</div>
+							<div class="we-form__button">
+								<button class=" button">Отримати запрошення</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="process">
+				<div class="process__container">
+					<div class="process-inner">
+						<div class="process-content">
+							<div class="process-content__inner">
+								<div class="process-content__title title-small">Як ми працюємо & процес якому слідуємо</div>
+								<div class="process-content__text">
+									<div class="process-content__text-item text-black">Through True Rich Attended does no end it his mother since</div>
+									<div class="process-content__text-item text-black">Attended does no end it his mother since real had half every</div>
+									<div class="process-content__text-item text-black">Since real had half every him case in packages enquire we up ecstatic</div>
+								</div>
+							</div>
+						</div>
+						<div class="process-images">
+							<div class="process-images__box">
+								<div class="process-images__img">
+									<picture><source srcset="img/process-1.webp" type="image/webp"><img src="img/process-1.jpg" alt=""></picture>
+								</div>
+								<div class="process-images__img">
+									<picture><source srcset="img/process-2.webp" type="image/webp"><img src="img/process-2.jpg" alt=""></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="diagnose">
+				<div class="diagnose__container">
+					<div class=" diagnose-inner ">
+						<div class="diagnose-images">
+							<div class="diagnose-images__box">
+								<div class="diagnose-images__img">
+									<picture><source srcset="img/diagnose-1.webp" type="image/webp"><img src="img/diagnose-1.jpg" alt=""></picture>
+								</div>
+								<div class="diagnose-images__img">
+									<picture><source srcset="img/diagnose-2.webp" type="image/webp"><img src="img/diagnose-2.jpg" alt=""></picture>
+								</div>
+							</div>
+						</div>
+						<div class="diagnose-content">
+							<div class="diagnose-content__inner">
+								<div class="diagnose-content__title title-small">Як ми працюємо & процес якому слідуємо</div>
+								<p class="diagnose-content__text text ">
+									Ми пропонуємо повний спектр механічного ремонту передньої частини для всіх марок і моделей автомобілів, незалежно від причини. Сюди входить усе: від стійок, амортизаторів і наконечників рульових тяг до кульових шарнірів, пружин, все від стійок, амортизаторів і кінців рульових тяг до кульових шарнірів, пружин
+								</p>
+								<div class="diagnose-content__button">
+									<a href="" class="button">Забронювати</a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<div class="reviews-inner">
+						<div class="reviews-title title-small">
+							<h3>Відгуки наших клієнтів</h3>
+						</div>
+						<div class="reviews-slider swiper">
+							<div class="reviews-wrapper swiper-wrapper">
+
+								<div class=" swiper-slide reviews-slide ">
+									<div class="reviews-slide__inner">
+										<div class="reviews-slide__person">
+											<div class="reviews-slide__person-img">
+												<picture><source srcset="img/person-1.webp" type="image/webp"><img src="img/person-1.jpg" alt=""></picture>
+											</div>
+											<div class="reviews-slide__person-box">
+												<div class="reviews-slide__person-name text-black">Зварун Богдан</div>
+												<div class="reviews-slide__person-city text">Тисмениця</div>
+											</div>
+										</div>
+										<p class="reviews-slide__text text-black">
+											Lorem ipsum dolor sit amet consectetur, adipisici harum impedit prusantium harum commodi qui quisquam ipsum dolorem omnis? Vero et quidem labore magni, voluptatum quibusdam accusantium totam?
+									</div>
+								</div>
+								<div class=" swiper-slide reviews-slide ">
+									<div class="reviews-slide__inner">
+										<div class="reviews-slide__person">
+											<div class="reviews-slide__person-img">
+												<picture><source srcset="img/person-2.webp" type="image/webp"><img src="img/person-2.jpg" alt=""></picture>
+											</div>
+											<div class="reviews-slide__person-box">
+												<div class="reviews-slide__person-name text-black">Зварун Роман</div>
+												<div class="reviews-slide__person-city text">Івано - Франківськ</div>
+											</div>
+										</div>
+										<p class="reviews-slide__text text-black">
+											Lorem ipsum dolor sit amet couisquam ipsum dolorem omnis? Vero et quidem labore magni, voluptatum quibusdam accusantium totam?
+										</p>
+									</div>
+								</div>
+								<div class=" swiper-slide reviews-slide ">
+									<div class="reviews-slide__inner">
+										<div class="reviews-slide__person">
+											<div class="reviews-slide__person-img">
+												<picture><source srcset="img/person-1.webp" type="image/webp"><img src="img/person-1.jpg" alt=""></picture>
+											</div>
+											<div class="reviews-slide__person-box">
+												<div class="reviews-slide__person-name text-black">Зварун Богдан</div>
+												<div class="reviews-slide__person-city text">Тисмениця</div>
+											</div>
+										</div>
+										<p class="reviews-slide__text text-black">
+											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure harum impedit prusantium harum commodi qui quisquam ipsum dolorem omnis? Vero et quidem labore magni, voluptatum quibusdam accus
+										</p>
+									</div>
+								</div>
+								<div class=" swiper-slide reviews-slide ">
+									<div class="reviews-slide__inner">
+										<div class="reviews-slide__person">
+											<div class="reviews-slide__person-img">
+												<picture><source srcset="img/person-2.webp" type="image/webp"><img src="img/person-2.jpg" alt=""></picture>
+											</div>
+											<div class="reviews-slide__person-box">
+												<div class="reviews-slide__person-name text-black">Зварун Роман</div>
+												<div class="reviews-slide__person-city text">Івано - Франківськ</div>
+											</div>
+										</div>
+										<p class="reviews-slide__text text-black">
+											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure i qui quisquam ipsum dolorem omnis? Vero et quidem labore magni, voluptatum quibusdam accusantium totam?
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-buttons">
+								<button type="button" class="swiper-button-prev">
+									<div class="swiper-button__icon"></div>
+								</button>
+								<button type="button" class="swiper-button-next">
+									<div class="swiper-button__icon"></div>
+
+								</button>
+
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="offers">
+				<div class="offers__container">
+					<div class="offers-inner">
+						<div class="offers-subtitle">Що ми пропонуєм </div>
+						<div class="offers-title title">Ми пропонуєм загальне обстеження авто & підтримку </div>
+						<div class="offers-items">
+							<div class="offers-item">
+								<div class="offers-item__inner">
+									<div class="offers-item__icon">
+										<img src="img/offers-1.svg" alt="">
+									</div>
+									<div class="offers-item__text">Діагностика
+
+									</div>
+								</div>
+							</div>
+							<div class="offers-item">
+								<div class="offers-item__inner">
+									<div class="offers-item__icon">
+										<img src="img/offers-2.svg" alt="">
+									</div>
+									<div class="offers-item__text">Ремонт двигуна</div>
+								</div>
+							</div>
+							<div class="offers-item">
+								<div class="offers-item__inner">
+									<div class="offers-item__icon">
+										<img src="img/offers-3.svg" alt="">
+									</div>
+									<div class="offers-item__text">Ремонт колес</div>
+								</div>
+							</div>
+							<div class="offers-item">
+								<div class="offers-item__inner">
+									<div class="offers-item__icon">
+										<img src="img/offers-4.svg" alt="">
+									</div>
+									<div class="offers-item__text">Масляний фільтер</div>
+								</div>
+							</div>
+							<div class="offers-item">
+								<div class="offers-item__inner">
+									<div class="offers-item__icon">
+										<img src="img/offers-5.svg" alt="">
+									</div>
+									<div class="offers-item__text">Ручна робота</div>
+								</div>
+							</div>
+							<div class="offers-item">
+								<div class="offers-item__inner">
+									<div class="offers-item__icon">
+										<img src="img/offers-6.svg" alt="">
+									</div>
+									<div class="offers-item__text">Батареї</div>
+								</div>
+							</div>
+							<div class="offers-item">
+								<div class="offers-item__inner">
+									<div class="offers-item__icon">
+										<img src="img/offers-7.svg" alt="">
+									</div>
+									<div class="offers-item__text">Страхова заява</div>
+								</div>
+							</div>
+							<div class="offers-item">
+								<div class="offers-item__inner">
+									<div class="offers-item__icon">
+										<img src="img/offers-8.svg" alt="">
+									</div>
+									<div class="offers-item__text">Кастомний сервіс</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="contact-inner">
+					<div class="contact-item contact-item--1">
+					</div>
+					<div class="contact-item contact-item__content contact-item--2">
+						<div class="contact-item__content-title title-small">Звяжіться з нами для сервісу</div>
+						<a href="" class="contact-item__content-button button">Звязатись</a>
+					</div>
+					<div class="contact-item contact-item--3">
+					</div>
+				</div>
+			</section>
+			<section class="why">
+				<div class="why__container">
+					<div class="why-inner">
+						<div class="why-item">
+							<div class="why-item__number">
+								20+
+							</div>
+							<div class="why-item__text">Професіоналів</div>
+						</div>
+						<div class="why-item">
+							<div class="why-item__number">
+								10+
+							</div>
+							<div class="why-item__text">Років досвіду</div>
+						</div>
+						<div class="why-item">
+							<div class="why-item__number">
+								12К+
+							</div>
+							<div class="why-item__text">Виконаних обстежень</div>
+						</div>
+						<div class="why-item">
+							<div class="why-item__number">
+								100%
+							</div>
+							<div class="why-item__text">
+								Клієнтів задоволено
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
 		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+		<footer class="footer">
+			<div class="footer-upper">
+				<div class="footer-upper__container">
+					<div class="footer-upper__left">
+						<div class="footer-upper__left-inner">
+							<div class="footer-upper__title">Звяжіться з нами для огляду</div>
+							<div class="footer-upper__social">
+								<a href="" class="footer-upper__social-link">
+									<img src="img/fc-icon.svg" alt="">
+								</a>
+								<a href="" class="footer-upper__social-link">
+									<img src="img/tw-icon.svg" alt="">
+								</a>
+								<a href="" class="footer-upper__social-link">
+									<img src="img/ig-icon.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-upper__right">
+						<div class="footer-upper__right-inner">
+							<div class="footer-upper__right-item">
+								<div class="text footer-upper__subtitle ">Номер телефону</div>
+								<div class="footer-upper__text title">+380 50 24 29 680</div>
+							</div>
+							<div class="footer-upper__right-item">
+								<div class="footer-upper__subtitle text">Адреса</div>
+								<div class="footer-upper__text title">м. Івано-Франківськ вул. Хоткевича 34 </div>
+							</div>
+							<div class="footer-upper__right-item">
+								<div class="footer-upper__subtitle text">Ми відкриті: </div>
+								<div class="footer-upper__text title">З понеділка - П'ятницю з 8:00-18:00</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom__container header__container">
+					<div class="footer-bottom__logo header__logo">
+						<a href="" data-goto=".home">{AUTO IF</a>
+					</div>
+					<div class="footer-bottom__menu menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" data-goto=".header">Головна</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" data-goto=".services">Послуги</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" data-goto=".about">Про нас </a>
+							</li>
+
+							<li class="menu__item">
+								<a class="menu__link" data-goto=".footer" href="#">Контакти</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-bottom__copyright text">
+						@ Copyright Finsweet 2021
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.js"></script>
+</body>
+
 </html>
